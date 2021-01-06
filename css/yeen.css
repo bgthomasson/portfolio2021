@@ -1,0 +1,150 @@
+/* BROWSER SUPPORT 2020: Chrome 70, Firefox 70, Safari 12 (nothing for IE11) */
+/* generic styling like color etc. ------------------------------------------ */
+
+html {
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(58, 93%, 95%);
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* BASIC LAYOUT ------------------------------------------------------------- */
+
+header {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 0 1em;
+}
+
+article {
+    margin-bottom: 5em;
+}
+
+footer {
+    padding: 1em;
+}
+
+/* DESKTOP LAYOUT ----------------------------------------------------------- */
+
+@media screen and (min-width: 50em) and (orientation: landscape) {
+    body {
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    .buttonish {
+        display: inline-block;
+    }
+
+    .flexy {
+        box-sizing: border-box;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    .cell50 {
+        flex: 0 0 50%;
+        padding: 0 .5em;
+    }
+    /* To force an evenly split 2 column of text/photo, else image width determines the width */
+
+    .griddle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        place-items: center;
+    }
+
+    .central {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+
+/* MISC STYLING ------------------------------------------------------------- */
+
+address {
+    font-style: normal;
+    font-weight: bold;
+    padding: .5em;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    color: hsl(34, 57%, 70%); 
+    font-size: 2.4em;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* to make links look like buttons w/o adding <button> where it'd be superfluous */
+
+.buttonish {
+    width: 8em;
+    background-color: hsl(215, 61%, 37%); 
+    border: 0;
+    border-radius: 1em;
+    color: inherit;
+    font-weight: bold;
+    padding: .5em;
+    margin-bottom: .3em;
+    text-decoration: none;
+}
+
+.buttonish:hover {
+    box-shadow: 0 0 1em hsl(215, 26%, 65%);
+    transition: all .5s;
+}
+
+/* with chalk theme, might need some colored text, which I know is super specific but... */
+
+.chalk-red {
+    color: hsl(1, 71%, 77%);
+}
+
+.chalk-brown {
+    color: hsl(34, 57%, 70%);
+}
+
+.chalk-cyan {
+    color: hsl(178, 72%, 80%);
+}
+
+.chalk-purplish {
+    color: hsl(248, 62%, 80%)
+}
+

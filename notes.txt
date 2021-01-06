@@ -1,0 +1,41 @@
+ART PORTFOLIO EXAMPLE
+
+1. landing page 
+
+a. gallery (sorted?) 
+b. individual item info 
+c. commission info - types, prices, TOS, status (or link to where it is updated) 
+d. store (elsewhere) 
+e. contact info (mail, other sites) 
+f. about me (maybe an FAQ?)
+
+
+
+EX:
+Goldenwolf has a main page with thumbs as links. banner and navbar top, other site links at bottom. 
+links- gallery, store (ext), commission info, about
+
+Vex has main with 9 big img (carousel), pages: about, faq, commission info, contact. 
+
+tanidareal also main with pages. banner + nav on top, external links on bottom. instagram thumbs on side. 
+
+store sites seem to have a 3 col thumb layout. 
+except redbubble which actually uses a grid unlike the one that was all floats. 
+
+
+
+option 1: "almost one page" with all info on main, thumbs link to itempages. 
+pro: efficient, simple. 
+con: a little heavy, maybe too much scrolling? 
+
+FANCY
+alternate between text and images! 
+container, box with 3 examples, box with text 40 em wide centered
+
+stickers.
+sketches.
+colorings.
+
+
+
+
