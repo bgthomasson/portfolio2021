@@ -36,6 +36,11 @@ stickers.
 sketches.
 colorings.
 
+--------
+Version A1 "single page with alternate sections" is OK. 
+should it all be center aligned, and how to do that?
+are those colors OK?? 
+
 
 
 
