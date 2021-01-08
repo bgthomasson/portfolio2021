@@ -39,7 +39,12 @@ colorings.
 --------
 Version A1 "single page with alternate sections" is OK. 
 1. should it all be center aligned, and how to do that?
-2. are those colors OK?? what about "paper" color?? more up top? 
+As in, just text-align the whole durn thing or force the boxes to the middle? 
+
+2. are those colors OK?? I feel like it's too harsh all dark. 
+the <main> bg is fine but it needs texture? also dark warm colors are muddy. 
+
+3. image links- only on biggest to see fullsize? For now using links to Imgur as most pragmatic. 
 
 OH yes. Absolutely must! look good on a phone at a con!!! 
 Portable portfolio!! 

@@ -3,12 +3,12 @@
 :root {
     --paper: hsl(0, 0%, 16%);
     --neutral: hsl(60, 5%, 32%);
-    --banner: hsl(37, 10%, 32%);
+    --banner: hsl(35, 10%, 32%);
     --ink: hsl(240, 40%, 98%);
 }
 
 html {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-size: 1rem;
 }
 
@@ -21,7 +21,8 @@ html {
 body {
     background-color: var(--neutral);
     color: var(--ink);
-    font-family: 'Open Sans', Candara, -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', Candara, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Ubuntu, Cantarell, Helvetica, 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
     line-height: 1.5;
     margin: 0;
@@ -31,9 +32,7 @@ body {
 
 .page-header {
     background-color: var(--banner);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    padding: 1em 0;
 }
 
 main {
@@ -47,18 +46,27 @@ main {
         margin-right: auto;
         margin-left: auto;
     }
+
+    .page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .flexy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    article {
+        padding: 0 1em; 
+    }
 }
 
 article {
     margin-bottom: 5em;
-    padding: 0 1em; 
-}
-
-.flexy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
 }
 
 .narrow {
@@ -96,7 +104,7 @@ img {
     border: 0;
     border-radius: 1em;
     font-weight: bold;
-    padding: 1em;
+    padding: 0.4em 1em;
 }
 
 .buttonish:hover {
