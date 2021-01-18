@@ -2,9 +2,12 @@
 
 :root {
     --paper: hsl(0, 0%, 16%);
-    --neutral: hsl(60, 5%, 32%);
+    --neutral: hsl(60, 1%, 40%);
     --banner: hsl(35, 10%, 32%);
-    --ink: hsl(240, 40%, 98%);
+    --ink: hsl(240, 15%, 94%);
+    --navy: hsl(234, 44%, 32%);
+    --inactive: hsl(235, 61%, 34%);
+    --active: hsl(120, 57%, 43%);
 }
 
 html {
@@ -31,8 +34,10 @@ body {
 /* - ---------------------------------------------------------------------- - */
 
 .page-header {
-    background-color: var(--banner);
     padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 main {
@@ -41,18 +46,6 @@ main {
 }
 
 @media screen and (min-width: 600px) {
-    main {
-        width: 90vw;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .page-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
     .flexy {
         display: flex;
         align-items: center;
@@ -60,13 +53,11 @@ main {
         gap: 1em;
     }
 
-    article {
-        padding: 0 1em; 
-    }
 }
 
 article {
     margin-bottom: 5em;
+    padding: 0 1em;
 }
 
 .narrow {
@@ -100,7 +91,7 @@ img {
 
 /* https://codesalad.dev/blog/manipulating-colors-with-css-variables-and-hsl-16 */
 .buttonish {
-    background-color: hsl(234, 44%, 32%);
+    background-color: var(--inactive);
     border: 0;
     border-radius: 1em;
     font-weight: bold;
@@ -108,6 +99,6 @@ img {
 }
 
 .buttonish:hover {
-    background-color: hsl(120, 31%, 44%);
+    background-color: var(--active);
     transition: .5s;
 }
