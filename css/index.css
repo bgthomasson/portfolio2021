@@ -6,7 +6,7 @@
     --banner: hsl(39, 74%, 72%);
     --ink: hsl(240, 15%, 94%);
     --inactive: hsl(235, 61%, 34%);
-    --active: hsl(120, 57%, 43%);
+    --active: hsl(54, 73%, 72%);
 }
 
 html {
@@ -72,12 +72,8 @@ article {
 /* -------------------------------------------------------------------------- */
 
 a {
-    color: inherit;
-}
-
-a:hover {
-    background-color: var(--active);
-    transition: .5s;
+    background-color: var(--ink);
+    text-decoration: none;
 }
 
 h1, 
