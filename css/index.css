@@ -5,8 +5,7 @@
     --neutral: hsl(60, 1%, 40%);
     --banner: hsl(39, 74%, 72%);
     --ink: hsl(240, 15%, 94%);
-    --inactive: hsl(235, 61%, 34%);
-    --active: hsl(54, 73%, 72%);
+    --links: hsl(190, 100%, 50%);
 }
 
 html {
@@ -72,8 +71,7 @@ article {
 /* -------------------------------------------------------------------------- */
 
 a {
-    background-color: var(--ink);
-    text-decoration: none;
+    color: var(--links);
 }
 
 h1, 
