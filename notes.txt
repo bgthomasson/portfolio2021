@@ -45,9 +45,19 @@ As in, just text-align the whole durn thing or force the boxes to the middle?
 the <main> bg is fine but it needs texture? also dark warm colors are muddy. 
 
 3. image links- only on biggest to see fullsize? For now using links to Imgur as most pragmatic. 
+Ideally will be self hosted on production site!!!
 
-OH yes. Absolutely must! look good on a phone at a con!!! 
+OH yes. Absolutely must look good on a phone at a con!!! 
 Portable portfolio!! 
+However, that throws a kink in things. I used dark by default so images stand out more, but...
+if you're in some well lit or outdoor place then that'll turn it into an obsidian mirror and hide the text, right!?
+(However I think overall it's the better default since being blinded in bed is worse than having to squint a bit outdoors, right?)
+So gotta have toggle dark/light, but how?
+If it was simply desktop then @media (prefers-color-scheme: dark/light) would be enough but as I said- mobile! 
+user needs to be able to switch based on current environment, so we need a button. 
+
+OK found an example from CSS tricks! Just using JS since a plain static website. 
+SInce it's fairly basic concept I'm OK with just borrowing it >.>;;
 
 
 

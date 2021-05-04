@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="color-scheme" content="dark light">
     <title>Bennu.Art</title>
     <link rel="stylesheet" type="text/css" media="all" href="css/index.css" />
 </head>
-<body>
+<body class="">
     <header>
         <nav>
             <a href="#">Store</a>
             <a href="#">Email</a>
             <a href="#">Twitter</a>
+            <button class="btn-theme">Dark/Light</button>
         </nav>
         <h1>Bennu art</h1>
         <img src="https://i.imgur.com/jZPH5Pm.jpg" title="dragons inspired by Spyro" width="1280" height="525" />
@@ -58,6 +60,9 @@
                 <p>Time: up to 1 week</p>
             </section>
             <section class="flexy">
+                <!-- OK so with my 24 inch screen, having the browser FULL width seems to give enough space for the text to 
+                start beside the img instead of under. The fix is of course adding boxes but I'll leave it for now as a warning, lol.
+                -->
                 <p>
                     <img src="https://i.imgur.com/rUzm8IO.png" title="dragon coloring" width="907" height="1247" />
                     <a href="https://twitter.com/TinyFlyThing/status/1242344716328468480">Original here</a>
@@ -100,5 +105,6 @@
         <a href="#">Email</a>
         <a href="#">Twitter</a>
     </footer>
+    <script type="text/javascript" src="js/theme-toggle.js"></script>
 </body>
 </html>
