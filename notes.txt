@@ -59,6 +59,8 @@ user needs to be able to switch based on current environment, so we need a butto
 OK found an example from CSS tricks! Just using JS since a plain static website. 
 SInce it's fairly basic concept I'm OK with just borrowing it >.>;;
 
-
+However it is VERY fragile, I think because specifying the body classs? changing ANYTHING can fuck it up. 
+oh also maybe the saving settings goofs up when constantly refresshing to check minor edits lol. 
+For some reason --links works fine in dark mode but not light mode!?!? it's black instead of blue!
 
 
