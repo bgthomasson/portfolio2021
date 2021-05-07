@@ -16,7 +16,7 @@
             <button class="btn-theme">Dark/Light</button>
         </nav>
         <h1>Bennu art</h1>
-        <img src="https://i.imgur.com/jZPH5Pm.jpg" title="dragons inspired by Spyro" width="1280" height="525" />
+        <img src="https://i.imgur.com/jZPH5Pm.jpg" alt="dragons inspired by Spyro" width="1280" height="525" />
     </header>
     <main>
         <article>
@@ -27,13 +27,13 @@
             </section>
             <section class="flexy">
                 <a href="https://imgur.com/OzT3fYI">
-                    <img src="https://i.imgur.com/OzT3fYI.png" title="kobold sticker" width="512" height="512" />
+                    <img src="https://i.imgur.com/OzT3fYI.png" alt="kobold sticker" width="512" height="512" />
                 </a>
                 <a href="https://imgur.com/ySfi7Si">
-                    <img src="https://i.imgur.com/ySfi7Si.png" title="rust monster" width="512" height="512" />
+                    <img src="https://i.imgur.com/ySfi7Si.png" alt="rust monster" width="512" height="512" />
                 </a>
                 <a href="https://imgur.com/8sHHTFB">
-                    <img src="https://i.imgur.com/8sHHTFB.png" title="Yata sticker" width="512" height="512" />
+                    <img src="https://i.imgur.com/8sHHTFB.png" alt="Yata sticker" width="512" height="512" />
                 </a>
             </section>
         </article>
@@ -45,11 +45,12 @@
             </section>
             <section class="flexy">
                 <a href="https://imgur.com/Sq8RMik">
-                    <img src="https://i.imgur.com/Sq8RMik.jpg" title="skull and teeth studies" width="877" height="1240" />
+                    <img src="https://i.imgur.com/Sq8RMik.jpg" alt="skull and teeth studies" width="877" height="1240" loading="lazy" />
                 </a>
                 <a href="https://imgur.com/XEudZnQ">
-                    <img src="https://i.imgur.com/XEudZnQ.jpg" title="clothing studies" width="1305" height="1686" />
+                    <img src="https://i.imgur.com/XEudZnQ.jpg" alt="clothing studies" width="1305" height="1686" loading="lazy" />
                 </a>
+                <!-- Should these be links? Just big thumbnails etc. -->
             </section>
         </article>
         <article>
@@ -61,14 +62,17 @@
             </section>
             <section class="flexy">
                 <!-- OK so with my 24 inch screen, having the browser FULL width seems to give enough space for the text to 
-                start beside the img instead of under. The fix is of course adding boxes but I'll leave it for now as a warning, lol.
+                start beside the img instead of under. The "proper" fix is of course adding boxes but I'll leave a note as a warning, lol.
                 -->
                 <p>
-                    <img src="https://i.imgur.com/rUzm8IO.png" title="dragon coloring" width="907" height="1247" />
+                    <img src="https://i.imgur.com/rUzm8IO.png" alt="dragon coloring" width="907" height="1247" loading="lazy" />
+                    <br><!-- TERRIBLE hack lol -->
                     <a href="https://twitter.com/TinyFlyThing/status/1242344716328468480">Original here</a>
                 </p>
+                <!-- Turns out this dragon is 1 megabyte so obvious choice for using <picture> at some point! -->
                 <p>
-                    <img src="https://i.imgur.com/GuIiNVL.jpg" title="human coloring" width="674" height="1186" />
+                    <img src="https://i.imgur.com/GuIiNVL.jpg" alt="human coloring" width="674" height="1186" loading="lazy" />
+                    <br>
                     <a href="https://twitter.com/JasminDarnell">Original lines by</a>
                 </p>
             </section>
@@ -97,7 +101,7 @@
         <article class="narrow">
             <h2>FAQ</h2>
             <p>For digital work I use an old Wacom tablet with Krita on Linux.</p>
-            <img src="https://i.imgur.com/rEKg4hd.png" alt="Bennu drawing" width="512" height="512" />
+            <img src="https://i.imgur.com/rEKg4hd.png" alt="Bennu drawing" width="512" height="512" loading="lazy" />
         </article>
     </main>
     <footer>

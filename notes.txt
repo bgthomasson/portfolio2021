@@ -1,7 +1,6 @@
 ART PORTFOLIO EXAMPLE
 
 1. landing page 
-
 a. gallery (sorted?) 
 b. individual item info 
 c. commission info - types, prices, TOS, status (or link to where it is updated) 
@@ -9,20 +8,14 @@ d. store (elsewhere)
 e. contact info (mail, other sites) 
 f. about me (maybe an FAQ?)
 
+Examples of real sites: 
+1. main page with thumbs as links. banner and navbar top, other site links at bottom. links- gallery, store (ext), commission info, about
 
+2. main with 9 big img (carousel), pages: about, faq, commission info, contact. 
 
-EX:
-Goldenwolf has a main page with thumbs as links. banner and navbar top, other site links at bottom. 
-links- gallery, store (ext), commission info, about
+3. main with pages. banner + nav on top, external links on bottom. instagram thumbs on side. 
 
-Vex has main with 9 big img (carousel), pages: about, faq, commission info, contact. 
-
-tanidareal also main with pages. banner + nav on top, external links on bottom. instagram thumbs on side. 
-
-store sites seem to have a 3 col thumb layout. 
-except redbubble which actually uses a grid unlike the one that was all floats. 
-
-
+store sites seem to have a 3 col thumb layout. except redbubble which actually uses a grid unlike the one that was all floats. 
 
 option 1: "almost one page" with all info on main, thumbs link to itempages. 
 pro: efficient, simple. 
@@ -62,5 +55,26 @@ SInce it's fairly basic concept I'm OK with just borrowing it >.>;;
 However it is VERY fragile, I think because specifying the body classs? changing ANYTHING can fuck it up. 
 oh also maybe the saving settings goofs up when constantly refresshing to check minor edits lol. 
 For some reason --links works fine in dark mode but not light mode!?!? it's black instead of blue!
+edit: later it did things right, SNAFU.
+
+img loading='lazy'
+or/also wrap in <picture> so we have small versions for mobile/thumbnails ??
+I think for mobile with tiny screen and data caps that is best, but I'm not sure how to handle desktop. 
+Use the small thumbs and have a note to "click on to see full"?
+Use big thumbs and "click on to see gigantic" on the ones that are super big?
+
+<picture>
+    <source srcset="dragon-huge.jpg" type="image/jpg" media="(min-width: 900px)">
+    <img src="dragon-400px.webp" type="image/webp" alt="dragon thumb">
+    // JPG fallback? //
+</picture>
+
+WebP has ~90% support. falls within supported FF and Chrome 80+, and Safari seems to well enough. 
+
+https://www.smashingmagazine.com/2021/04/humble-img-element-core-web-vitals/
+lots of stuff to go over.
+
+content-visibility: auto;
+only in Chrome but for mobile might be good 
 
 
