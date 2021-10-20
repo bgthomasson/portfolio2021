@@ -38,7 +38,7 @@ body.light {
     --links: hsl(240, 100%, 50%);
 }
 
-
+/* should also have 'medium' that's like 50% grey */
 /* - ---------------------------------------------------------------------- - */
 
 header {
