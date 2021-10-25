@@ -1,8 +1,9 @@
-/* Main targets FF 80+, Chromium 80+, Safari 13+ */
+/* Main targets FF 80+, Chromium 80+, Safari 13+ 
+ * The plan here is something great on mobile for conventions etc. 
+*/
 
 :root{
     --gold: hsl(39, 74%, 72%);
-    --bennu: hsl(56, 93%, 83%);
 }
 
 html {
@@ -26,19 +27,32 @@ body {
     margin: 0;
 }
 
-body.dark {
-    --paper: hsl(0, 0%, 16%);
-    --ink: hsl(240, 15%, 94%);
-    --links: hsl(190, 100%, 50%);
+@media (prefers-color-scheme: light){
+    body {
+        --paper: hsl(240, 15%, 94%);
+        --ink: hsl(0, 0%, 11%);
+        --links: hsl(240, 100%, 50%);
+    }
+    body.dark {
+        --paper: hsl(0, 0%, 16%);
+        --ink: hsl(0, 0%, 92%);
+        --links: hsl(190, 100%, 50%);
+    }
+}
+@media (prefers-color-scheme: dark){
+    body {
+        --paper: hsl(0, 0%, 16%);
+        --ink: hsl(0, 0%, 92%);
+        --links: hsl(190, 100%, 50%);
+    }
+    body.light {
+        --paper: hsl(240, 15%, 94%);
+        --ink: hsl(0, 0%, 11%);
+        --links: hsl(240, 100%, 50%);
+    }
 }
 
-body.light {
-    --paper: hsl(240, 15%, 94%);
-    --ink: hsl(0, 0%, 16%);
-    --links: hsl(240, 100%, 50%);
-}
-
-/* should also have 'medium' that's like 50% grey */
+/* should also have 'medium' that's like 50% grey ?? */
 /* - ---------------------------------------------------------------------- - */
 
 header {
